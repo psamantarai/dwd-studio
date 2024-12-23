@@ -6,7 +6,7 @@ import Gallery from "../pages/Gallery.jsx";
 import Navbar from "./Navbar.jsx";
 const Layout = () => {
   return (
-    <>
+    <div className="w-screen min-h-screen bg-richblack-900 flex flex-col font-inter">
       <Navbar />
       <Routes>
         <Route path="/" indexed element={<Home />} />
@@ -14,7 +14,7 @@ const Layout = () => {
         <Route path="/contactus" element={<Contact />} />
         <Route path="/gallery" element={<Gallery />} />
       </Routes>
-    </>
+    </div>
   );
 };
 
